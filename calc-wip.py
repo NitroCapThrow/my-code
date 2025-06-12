@@ -7,14 +7,14 @@ x for multiplication
 / for division\n\n
 ''')
 
-n1 = int(input("what is ur first number: "))
-n2 = int(input("what is ur second number: "))
+n1 = int(input("\nwhat is ur first number: "))
+n2 = int(input("\nwhat is ur second number: "))
 
 if type == "+":
-    print(n1 + n2)
+    print("\n{} + {} = {}".format(n1, n2, n1 + n2))
 if type == "-":
-    print(n1 - n2)
+    print("\n{} - {} = {}".format(n1, n2, n1 - n2))
 if type == "x":
-    print(n1 * n2)
+    print("\n{} * {} = {}".format(n1, n2, n1 * n2))
 if type == "/":
-    print(n1 / n2)
+    print("\n{} / {} = {}".format(n1, n2, n1 / n2))
