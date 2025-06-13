@@ -1,20 +1,27 @@
 print("\tCALCULATOR")
 
-type = input('''
+t = input('''
 + for addition
 - for subtraction
-x for multiplication
-/ for division\n\n
+* for multiplication
+/ for division
+% for percentage
 ''')
 
-n1 = int(input("\nwhat is ur first number: "))
-n2 = int(input("\nwhat is ur second number: "))
+if t == "+" or "-" or "*" or "/":
+    n1 = int(input("what is ur first number: "))
+    n2 = int(input("what is ur second number: "))
+if t == "%":
+    n1p = int(input("what percentage are you doing: "))
+    n2p = int(input("of what: "))
 
-if type == "+":
-    print("\n{} + {} = {}".format(n1, n2, n1 + n2))
-if type == "-":
-    print("\n{} - {} = {}".format(n1, n2, n1 - n2))
-if type == "x":
-    print("\n{} * {} = {}".format(n1, n2, n1 * n2))
-if type == "/":
-    print("\n{} / {} = {}".format(n1, n2, n1 / n2))
+if t == "+":
+    print(f"{n1} + {n2} = {n1 + n2}")
+if t == "-":
+    print(f"{n1} - {n2} = {n1 - n2}")
+if t == "*":
+    print(f"{n1} * {n2} = {n1 * n2}")
+if t == "/":
+    print(f"{n1} / {n2} = {n1 / n2}")
+if t == "%":
+    print(f"{n1p}% of {n2p} = {n1p / 100 * n2p}")
